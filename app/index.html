@@ -16,7 +16,7 @@
         </div>
         <div class="panel-body">
             <ul class="list-group">
-                <li data-ng-repeat="u in users" class="list-group-item">
+                <li data-ng-repeat="u in users" class="list-group-item track by $index">
                     <span data-ng-bind="u.username"></span>
                     <span data-ng-bind="u.useremail"></span>
                     <span data-ng-bind="u.userpwd"></span>
