@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-ng-app="myapp">
+<head>
+    <title>rest</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <!--meta:vp-->
+    <link rel="stylesheet" href="public/lib/bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body data-ng-controller="MainCtrl">
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <a href="#" class="btn btn-xs btn-primary">增加用户</a>
+        </div>
+        <div class="panel-body">
+            <ul class="list-group">
+                <li data-ng-repeat="u in users" class="list-group-item">
+                    <span data-ng-bind="u.username"></span>
+                    <span data-ng-bind="u.useremail"></span>
+                    <span data-ng-bind="u.userpwd"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="panel-footer text-center">
+            子凡科技股份有限公司@2005
+        </div>
+    </div>
+</div>
+</body>
+<script src="public/lib/jquery/dist/jquery.min.js"></script>
+<script src="public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="public/lib/angular/angular.min.js"></script>
+<script src="js/app.js"></script>
+</html>
