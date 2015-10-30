@@ -3,9 +3,11 @@ var fs = require('fs');
 var path = require('path');
 var mime = require('mime');
 var db = require('./db');
+var url = require('url');
 var server = http.createServer(function (req, res) {
     var method = req.method;
     var url = req.url;
+    //url.parse(url, true);//true表示把查询字符串转化成
     if (url == '/') {
         fs.createReadStream('./app/index.html').pipe(res);
     } else {

@@ -15,4 +15,13 @@ app.controller('MainCtrl', function ($scope, $http) {
             $scope.users = res.data;
         });
     };
+    $scope.delete = function (id) {
+        var options = {
+            method: 'DELETE',
+            url: '/user?_id=' + id
+        };
+        $http(options).then(function (res) {
+            $scope.users = res.data;
+        });
+    };
 })
