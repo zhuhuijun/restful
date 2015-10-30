@@ -1,0 +1,25 @@
+{
+  "name": "rest",
+  "version": "1.0.1",
+  "description": "rest",
+  "main": "app.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhuhuijun/restful"
+  },
+  "keywords": [
+    "rest"
+  ],
+  "author": "zhuhj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhuhuijun/restful/issues"
+  },
+  "homepage": "https://github.com/zhuhuijun/restful",
+  "dependencies": {
+    "cookie-parser": "^1.4.0"
+  }
+}

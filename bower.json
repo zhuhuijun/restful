@@ -1,0 +1,25 @@
+{
+  "name": "rest",
+  "description": "rest",
+  "main": "app.js",
+  "authors": [
+    "zhuhj"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "rest"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7"
+  }
+}
